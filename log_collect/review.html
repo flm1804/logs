@@ -8,6 +8,24 @@
         document.cookie="uuid=123;expires";
 document.cookie = "sid=456";
 document.cookie = "mid=789";
+console.log(document.cookie)
+        //js定义一个对象
+        var student ={
+    id:0910,
+            name:"付丽明",
+            say:function(){
+alert("可爱")
+            },
+};
+student.say()
+console.log("id:"+student.id)
+        //给实例对象动态添加属性
+        student.age=12
+        alert(student.age)
+        //遍历对象的属性和属性值
+        for( key in student){
+    console.log(key +"="+student[key])
+        }
     </script>
 </head>
 <body>
